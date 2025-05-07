@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrowList - To-Do Garden</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 GrowList Garden</h1>
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Plant a new task..." />
+      <input type="date" id="dueDate" />
+      <select id="moodSelect">
+        <option value="happy">😊 Happy</option>
+        <option value="calm">🌊 Calm</option>
+        <option value="focused">🎯 Focused</option>
+        <option value="stressed">😖 Stressed</option>
+      </select>
+      <button onclick="addTask()">Plant</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
